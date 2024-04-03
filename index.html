@@ -13,88 +13,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container bg-body-tertiary">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Saldi</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Welcome Summer</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                  >
-                    Last Minute
-                  </a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome Summer</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
+                Last Minute
+              </a>
+            </li>
 
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true"
-                    >Recensioni</a
-                  >
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Cerca posti da sogno"
-                  aria-label="Search"
-                />
-                <button
-                  class="btn btn-outline-success border border-danger text-danger"
-                  type="submit"
-                >
-                  cerca
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card border rounded" style="width: 100%">
-            <div class="card-body">
-              <h5 class="card-title">Eveline-R</h5>
-              <p class="card-text">
-                Scopri le destinazioni più calde del momento!
-              </p>
-              <a href="#" class="btn btn-info">Prenota ora!</a>
-            </div>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cerca posti da sogno"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success border border-danger text-danger"
+              type="submit"
+            >
+              cerca
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-    <!-- sezione saldi-->
+    </nav>
     <div class="container">
-      <div class="row">
+
+      <div class="text-center text-lg-start bg-light rounded shadow-sm p-5 pt-4 mt-5">
+          <h1 class="display-1 d-inline-block text-muted align-middle">Eveline-R</h1>
+          <p class="lead d-inline-block mb-0 align-middle"> — Feel the Freedom</p>
+          <hr class="my-2" />
+          <p class="fs-3 fst-italic  text-muted mb-5">Scopri le destinazioni più calde del momento!</p>
+          <a class="btn btn-info btn-lg px-5 fw-bold text-light" href="#day-deal" role="button">Prenota ora</a>
+      </div>
+
+      <section class="my-5 d-flex flex-column" id="week-deal">
+          <div class="d-flex justify-content-between">
+              <h3>Saldi</h3>
+              <button type="button" class="btn btn-sm btn-outline-info border-0 align-self-center mb-4"
+                  data-bs-toggle="collapse" data-bs-target="#collapseWeekDeal" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  Nascondi sezione
+              </button>
+          </div>
+    
+    <!-- sezione saldi-->
+  
+      <div class="row collapse show g-3" id="collapseWeekDeal"> 
         <div class="col-6 col-sm-4 col-lg-3">
-          <div class="card border border-info rounded" style="width: 18rem">
+          <div class="card border border-info rounded"> 
             <img
               src="https://s1.it.atcdn.net/wp-content/uploads/2017/11/2917ITInsidersGuidePuglia_1500x1001px.jpg"
               class="card-img-top"
@@ -106,12 +98,14 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary bg-info border border-none"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-lg-3">
-          <div class="card border border-info rounded" style="width: 18rem">
+          <div class="card border border-info rounded" >
             <img
               src="https://content.skyscnr.com/m/6e21c0440b9e6453/original/Isola-di-Tropea-Calabria-GettyImages-92260373-1-.jpg?resize=1800px:1800px&quality=100"
               class="card-img-top"
@@ -123,12 +117,14 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary bg-info border border-none"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-lg-3">
-          <div class="card border border-info rounded" style="width: 18rem">
+          <div class="card border border-info rounded" >
             <img
               src="https://www.tripsavvy.com/thmb/uhkfo6FGBaZL3ElsKU88YpcECFE=/2880x2160/filters:fill(auto,1)/sailboat-on-emerald-sea-1132135765-6d24f458f80a41e99e6a6bb555dc4a93.jpg"
               class="card-img-top"
@@ -140,14 +136,16 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary bg-info border border-none"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
         <div class="col-6 col-lg-3">
           <div
             class="card border border-info rounded d-block d-sm-none d-lg-block"
-            style="width: 18rem"
+           
           >
             <img
               src="http://sopranovillas.com/wp-content/uploads/2019/12/favignana.jpg"
@@ -160,7 +158,9 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary bg-info border border-none"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
